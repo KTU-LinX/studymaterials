@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'cses5.dart';
 import 'cses1.dart';
 import 'main.dart';
 
@@ -98,7 +99,7 @@ class _CompsciState extends State<Compsci> {
                       context,
                       MaterialPageRoute(
                           builder: (context){
-                            return Compsci();
+                            return S5cse();
                           }
                       )
                   );

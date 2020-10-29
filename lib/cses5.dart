@@ -1,4 +1,10 @@
 import 'package:flutter/material.dart';
+import 'dc_notes.dart';
+import 'gt_notes.dart';
+import 'soft_notes.dart';
+import 'ss_notes.dart';
+import 'toc_notes.dart';
+import 'mm_notes.dart';
 import 'main.dart';
 import 'cse.dart';
 
@@ -42,7 +48,7 @@ class S5cse extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                           builder: (context){
-                            return Compsci();
+                            return Ss();
                           }
                       )
                   );
@@ -59,7 +65,7 @@ class S5cse extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                           builder: (context){
-                            return Compsci();
+                            return Mpmc();
                           }
                       )
                   );
@@ -76,7 +82,7 @@ class S5cse extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                           builder: (context){
-                            return Compsci();
+                            return Dc();
                           }
                       )
                   );
@@ -93,7 +99,7 @@ class S5cse extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                           builder: (context){
-                            return Compsci();
+                            return Gtc();
                           }
                       )
                   );
@@ -110,7 +116,7 @@ class S5cse extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                           builder: (context){
-                            return Compsci();
+                            return Sc();
                           }
                       )
                   );
@@ -141,14 +147,14 @@ class Toc extends StatelessWidget {
                     child: ReusableCard(colour: activeCardColour,
                       cardChild: Column(
                         children: <Widget>[
-                          Text ('MOD 1 NOTES',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
+                          Text ('NOTES',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
                           ),],), ),
                     onTap: (){
                       Navigator.push(
                           context,
                           MaterialPageRoute(
                               builder: (context){
-                                return Compsci();
+                                return TocNotes();
                               }
                           )
                       );
@@ -158,197 +164,7 @@ class Toc extends StatelessWidget {
                     child: ReusableCard(colour: activeCardColour,
                       cardChild: Column(
                         children: <Widget>[
-                          Text ('MOD 1 LECT',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-              ],
-            ),
-            Row(
-              children: [
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 2 NOTES',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 2 LECT',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-              ],
-            ),
-            Row(
-              children: [
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 3 NOTES',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 3 LECT',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-              ],
-            ),
-            Row(
-              children: [
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 4 NOTES',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 4 LECT',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-              ],
-            ),
-            Row(
-              children: [
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 5 NOTES',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 5 LECT',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-              ],
-            ),
-            Row(
-              children: [
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 6 NOTES',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 6 LECT',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
+                          Text ('LECT',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
                           ),],), ),
                     onTap: (){
                       Navigator.push(
@@ -376,7 +192,7 @@ class Ss extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
 
-        title: Text("TOC"),
+        title: Text("SS"),
       ),
       body: Center(
         child: Column(
@@ -388,14 +204,14 @@ class Ss extends StatelessWidget {
                     child: ReusableCard(colour: activeCardColour,
                       cardChild: Column(
                         children: <Widget>[
-                          Text ('MOD 1 NOTES',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
+                          Text ('NOTES',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
                           ),],), ),
                     onTap: (){
                       Navigator.push(
                           context,
                           MaterialPageRoute(
                               builder: (context){
-                                return Compsci();
+                                return SsNotes();
                               }
                           )
                       );
@@ -405,197 +221,7 @@ class Ss extends StatelessWidget {
                     child: ReusableCard(colour: activeCardColour,
                       cardChild: Column(
                         children: <Widget>[
-                          Text ('MOD 1 LECT',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-              ],
-            ),
-            Row(
-              children: [
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 2 NOTES',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 2 LECT',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-              ],
-            ),
-            Row(
-              children: [
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 3 NOTES',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 3 LECT',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-              ],
-            ),
-            Row(
-              children: [
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 4 NOTES',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 4 LECT',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-              ],
-            ),
-            Row(
-              children: [
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 5 NOTES',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 5 LECT',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-              ],
-            ),
-            Row(
-              children: [
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 6 NOTES',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 6 LECT',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
+                          Text ('LECT',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
                           ),],), ),
                     onTap: (){
                       Navigator.push(
@@ -622,7 +248,7 @@ class Mpmc extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
 
-        title: Text("TOC"),
+        title: Text("MPMC"),
       ),
       body: Center(
         child: Column(
@@ -634,14 +260,14 @@ class Mpmc extends StatelessWidget {
                     child: ReusableCard(colour: activeCardColour,
                       cardChild: Column(
                         children: <Widget>[
-                          Text ('MOD 1 NOTES',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
+                          Text ('NOTES',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
                           ),],), ),
                     onTap: (){
                       Navigator.push(
                           context,
                           MaterialPageRoute(
                               builder: (context){
-                                return Compsci();
+                                return MmNotes();
                               }
                           )
                       );
@@ -651,197 +277,7 @@ class Mpmc extends StatelessWidget {
                     child: ReusableCard(colour: activeCardColour,
                       cardChild: Column(
                         children: <Widget>[
-                          Text ('MOD 1 LECT',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-              ],
-            ),
-            Row(
-              children: [
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 2 NOTES',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 2 LECT',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-              ],
-            ),
-            Row(
-              children: [
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 3 NOTES',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 3 LECT',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-              ],
-            ),
-            Row(
-              children: [
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 4 NOTES',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 4 LECT',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-              ],
-            ),
-            Row(
-              children: [
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 5 NOTES',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 5 LECT',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-              ],
-            ),
-            Row(
-              children: [
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 6 NOTES',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 6 LECT',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
+                          Text ('LECT',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
                           ),],), ),
                     onTap: (){
                       Navigator.push(
@@ -868,7 +304,7 @@ class Dc extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
 
-        title: Text("TOC"),
+        title: Text("DC"),
       ),
       body: Center(
         child: Column(
@@ -880,14 +316,14 @@ class Dc extends StatelessWidget {
                     child: ReusableCard(colour: activeCardColour,
                       cardChild: Column(
                         children: <Widget>[
-                          Text ('MOD 1 NOTES',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
+                          Text ('NOTES',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
                           ),],), ),
                     onTap: (){
                       Navigator.push(
                           context,
                           MaterialPageRoute(
                               builder: (context){
-                                return Compsci();
+                                return DcNotes();
                               }
                           )
                       );
@@ -897,197 +333,7 @@ class Dc extends StatelessWidget {
                     child: ReusableCard(colour: activeCardColour,
                       cardChild: Column(
                         children: <Widget>[
-                          Text ('MOD 1 LECT',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-              ],
-            ),
-            Row(
-              children: [
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 2 NOTES',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 2 LECT',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-              ],
-            ),
-            Row(
-              children: [
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 3 NOTES',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 3 LECT',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-              ],
-            ),
-            Row(
-              children: [
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 4 NOTES',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 4 LECT',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-              ],
-            ),
-            Row(
-              children: [
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 5 NOTES',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 5 LECT',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-              ],
-            ),
-            Row(
-              children: [
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 6 NOTES',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 6 LECT',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
+                          Text ('LECT',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
                           ),],), ),
                     onTap: (){
                       Navigator.push(
@@ -1114,7 +360,7 @@ class Gtc extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
 
-        title: Text("TOC"),
+        title: Text("GTC"),
       ),
       body: Center(
         child: Column(
@@ -1126,14 +372,14 @@ class Gtc extends StatelessWidget {
                     child: ReusableCard(colour: activeCardColour,
                       cardChild: Column(
                         children: <Widget>[
-                          Text ('MOD 1 NOTES',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
+                          Text ('NOTES',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
                           ),],), ),
                     onTap: (){
                       Navigator.push(
                           context,
                           MaterialPageRoute(
                               builder: (context){
-                                return Compsci();
+                                return GtNotes();
                               }
                           )
                       );
@@ -1143,197 +389,7 @@ class Gtc extends StatelessWidget {
                     child: ReusableCard(colour: activeCardColour,
                       cardChild: Column(
                         children: <Widget>[
-                          Text ('MOD 1 LECT',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-              ],
-            ),
-            Row(
-              children: [
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 2 NOTES',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 2 LECT',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-              ],
-            ),
-            Row(
-              children: [
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 3 NOTES',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 3 LECT',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-              ],
-            ),
-            Row(
-              children: [
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 4 NOTES',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 4 LECT',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-              ],
-            ),
-            Row(
-              children: [
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 5 NOTES',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 5 LECT',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-              ],
-            ),
-            Row(
-              children: [
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 6 NOTES',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 6 LECT',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
+                          Text ('LECT',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
                           ),],), ),
                     onTap: (){
                       Navigator.push(
@@ -1360,7 +416,7 @@ class Sc extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
 
-        title: Text("TOC"),
+        title: Text("SC"),
       ),
       body: Center(
         child: Column(
@@ -1372,14 +428,14 @@ class Sc extends StatelessWidget {
                     child: ReusableCard(colour: activeCardColour,
                       cardChild: Column(
                         children: <Widget>[
-                          Text ('MOD 1 NOTES',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
+                          Text ('NOTES',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
                           ),],), ),
                     onTap: (){
                       Navigator.push(
                           context,
                           MaterialPageRoute(
                               builder: (context){
-                                return Compsci();
+                                return SoftNotes();
                               }
                           )
                       );
@@ -1389,197 +445,7 @@ class Sc extends StatelessWidget {
                     child: ReusableCard(colour: activeCardColour,
                       cardChild: Column(
                         children: <Widget>[
-                          Text ('MOD 1 LECT',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-              ],
-            ),
-            Row(
-              children: [
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 2 NOTES',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 2 LECT',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-              ],
-            ),
-            Row(
-              children: [
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 3 NOTES',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 3 LECT',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-              ],
-            ),
-            Row(
-              children: [
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 4 NOTES',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 4 LECT',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-              ],
-            ),
-            Row(
-              children: [
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 5 NOTES',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 5 LECT',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-              ],
-            ),
-            Row(
-              children: [
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 6 NOTES',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
-                          ),],), ),
-                    onTap: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context){
-                                return Compsci();
-                              }
-                          )
-                      );
-                    }
-                ),),
-                Expanded(child: GestureDetector(
-                    child: ReusableCard(colour: activeCardColour,
-                      cardChild: Column(
-                        children: <Widget>[
-                          Text ('MOD 6 LECT',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
+                          Text ('LECT',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
                           ),],), ),
                     onTap: (){
                       Navigator.push(
