@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'cses5.dart';
-import 'cses1.dart';
 import 'main.dart';
+import 'notavailable.dart';
 
 class Compsci extends StatefulWidget {
   @override
@@ -31,7 +31,7 @@ class _CompsciState extends State<Compsci> {
                       context,
                       MaterialPageRoute(
                           builder: (context){
-                            return S1cse();
+                            return NotAvailable();
                           }
                       )
                   );
@@ -48,7 +48,7 @@ class _CompsciState extends State<Compsci> {
                       context,
                       MaterialPageRoute(
                           builder: (context){
-                            return Compsci();
+                            return NotAvailable();
                           }
                       )
                   );
@@ -65,7 +65,7 @@ class _CompsciState extends State<Compsci> {
                       context,
                       MaterialPageRoute(
                           builder: (context){
-                            return Compsci();
+                            return NotAvailable();
                           }
                       )
                   );
@@ -82,7 +82,7 @@ class _CompsciState extends State<Compsci> {
                       context,
                       MaterialPageRoute(
                           builder: (context){
-                            return Compsci();
+                            return NotAvailable();
                           }
                       )
                   );
@@ -116,7 +116,7 @@ class _CompsciState extends State<Compsci> {
                       context,
                       MaterialPageRoute(
                           builder: (context){
-                            return Compsci();
+                            return NotAvailable();
                           }
                       )
                   );
@@ -133,7 +133,7 @@ class _CompsciState extends State<Compsci> {
                       context,
                       MaterialPageRoute(
                           builder: (context){
-                            return Compsci();
+                            return NotAvailable();
                           }
                       )
                   );
@@ -150,7 +150,7 @@ class _CompsciState extends State<Compsci> {
                       context,
                       MaterialPageRoute(
                           builder: (context){
-                            return Compsci();
+                            return NotAvailable();
                           }
                       )
                   );

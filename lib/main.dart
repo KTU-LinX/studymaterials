@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'notavailable.dart';
 import 'cse.dart';
 
 const activeCardColour = Colors.grey;
@@ -24,8 +25,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,14 +36,14 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Center(
+           Center(
               child: Expanded(child: GestureDetector(
                   child: ReusableCard(colour: activeCardColour,
                     cardChild: Column(
                       children: <Widget>[
                         Text ('CSE',style: TextStyle(fontSize: 20.0,),textAlign: TextAlign.center,
                         ),],), ),
-                  onTap: (){
+                  onTap:  (){
                     Navigator.push(
                         context,
                         MaterialPageRoute(
@@ -68,7 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         context,
                         MaterialPageRoute(
                             builder: (context){
-                              return Compsci();
+                              return NotAvailable();
                             }
                         )
                     );
@@ -87,7 +86,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         context,
                         MaterialPageRoute(
                             builder: (context){
-                              return Compsci();
+                              return NotAvailable();
                             }
                         )
                     );
@@ -106,7 +105,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         context,
                         MaterialPageRoute(
                             builder: (context){
-                              return Compsci();
+                              return NotAvailable();
                             }
                         )
                     );
@@ -125,7 +124,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         context,
                         MaterialPageRoute(
                             builder: (context){
-                              return Compsci();
+                              return NotAvailable();
                             }
                         )
                     );

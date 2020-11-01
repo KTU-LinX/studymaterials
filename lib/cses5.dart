@@ -1,4 +1,10 @@
 import 'package:flutter/material.dart';
+import 'sclect.dart';
+import 'dclect.dart';
+import 'gtclect.dart';
+import 'mmlect.dart';
+import 'toclect.dart';
+import 'sslect.dart';
 import 'dc_notes.dart';
 import 'gt_notes.dart';
 import 'soft_notes.dart';
@@ -6,7 +12,6 @@ import 'ss_notes.dart';
 import 'toc_notes.dart';
 import 'mm_notes.dart';
 import 'main.dart';
-import 'cse.dart';
 
 class S5cse extends StatelessWidget {
   @override
@@ -171,7 +176,7 @@ class Toc extends StatelessWidget {
                           context,
                           MaterialPageRoute(
                               builder: (context){
-                                return Compsci();
+                                return Toclechome();
                               }
                           )
                       );
@@ -228,7 +233,7 @@ class Ss extends StatelessWidget {
                           context,
                           MaterialPageRoute(
                               builder: (context){
-                                return Compsci();
+                                return Sslechome();
                               }
                           )
                       );
@@ -284,7 +289,7 @@ class Mpmc extends StatelessWidget {
                           context,
                           MaterialPageRoute(
                               builder: (context){
-                                return Compsci();
+                                return Mmlechome();
                               }
                           )
                       );
@@ -340,7 +345,7 @@ class Dc extends StatelessWidget {
                           context,
                           MaterialPageRoute(
                               builder: (context){
-                                return Compsci();
+                                return Dclechome();
                               }
                           )
                       );
@@ -396,7 +401,7 @@ class Gtc extends StatelessWidget {
                           context,
                           MaterialPageRoute(
                               builder: (context){
-                                return Compsci();
+                                return Gtclechome();
                               }
                           )
                       );
@@ -452,7 +457,7 @@ class Sc extends StatelessWidget {
                           context,
                           MaterialPageRoute(
                               builder: (context){
-                                return Compsci();
+                                return Sclechome();
                               }
                           )
                       );
